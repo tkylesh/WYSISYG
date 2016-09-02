@@ -67,3 +67,10 @@ var containerEl = document.getElementsByClassName('person_container');
 
 
 //Now you can create event listeners to the dom elements since they are already added to the page
+for(var i = 0; i< ArrObjects.length; i++){
+	containerEl[i].addEventListener("click", function(event){
+		// 8. When you click on one of the person elements, a dotted border should appear around it.
+		// 9. When you click on one of the person elements, the text input should immediately gain focus so that you can start typing
+
+	});
+}
