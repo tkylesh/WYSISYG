@@ -64,3 +64,6 @@ for (var i =0; i< ArrObjects.length; i++){
 //Now containerEl will have elements in it 
 //creates an array that contains all elements with this class
 var containerEl = document.getElementsByClassName('person_container');
+
+
+//Now you can create event listeners to the dom elements since they are already added to the page
