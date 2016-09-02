@@ -44,7 +44,7 @@ var ArrObjects = [
 // add a new div section for each object in the array
 for (var i =0; i< ArrObjects.length; i++){
 	//Add each person element to container and give each a common class and unique Id
-	outputEl.innerHTML += `<div class="person_container" id="person--${i}"><person><header>
+	outputEl.innerHTML += `<br/><br/><div class="person_container" id="person--${i}"><person><header>
 	name: ${ArrObjects[i]["name"]}<br/>
 	title: ${ArrObjects[i]["title"]}<br/></header>
 	<section>
@@ -56,7 +56,9 @@ for (var i =0; i< ArrObjects.length; i++){
 	death: ${ArrObjects[i]["lifespan"]["death"]}<br/>
 	</footer>
 	</person>
-	</div>`;
+	</div>
+	<br/>
+	<br/>`;
 }
 
 //Now containerEl will have elements in it 
