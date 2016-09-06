@@ -64,13 +64,15 @@ for (var i =0; i< ArrObjects.length; i++){
 //Now containerEl will have elements in it 
 //creates an array that contains all elements with this class
 var containerEl = document.getElementsByClassName('person_container');
+var targetSection;
+var edit = document.getElementById("edit");
 
 //keyup event listener
-document.getElementyById("edit").addEventListener("keyup",function(event){
+document.getElementById("edit").addEventListener("keyup",function(event){
   if(event.keyCode === 13){
     edit.value="";
   } else {
-    document.getElementyById(targetSection).innerHTML = `bio: ${edit.value}`;
+    document.getElementById(targetSection).innerHTML = `bio: ${edit.value}`;
   }
 })
 
@@ -79,9 +81,9 @@ document.getElementyById("edit").addEventListener("keyup",function(event){
 for(var i = 0; i< ArrObjects.length; i++){
 	containerEl[i].addEventListener("click", function(event){
     //get innerHTML of section element
-    var sec = document.getElementById(event.target.id).getElementsByTagName("section")[0];
+    var sec = document.getElementById(this.id).getElementsByTagName("section")[0];
     //set border of the section you clicked
-    document.getElementById(sec.id).style.border = "2px dotted yellow";
+    document.getElementById(this.id).style.border = "2px dotted yellow";
     //set focus to input field
     edit.focus();
     //define target section
