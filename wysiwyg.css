@@ -1,0 +1,11 @@
+body{
+	background-color: lightgray;
+}
+
+.person_container:nth-of-type(even){
+	background-color: lightyellow;
+}
+
+.person_container:nth-of-type(odd){
+	background-color: lightblue;
+}
